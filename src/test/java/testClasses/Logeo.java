@@ -1,9 +1,6 @@
 package testClasses;
 
-import page.CargaInformacion;
-import page.DescargarArchivos;
-import page.Login;
-import page.MatrizInformacion;
+import page.*;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -29,5 +26,10 @@ public class Logeo {
         cargaInformacion.recuperarTitulo();
         descargarArchivos.ingresarDescargarArchivos();
         descargarArchivos.descargarPorImagen();
+    }
+
+    public void json() throws IOException {
+        LeerJson leerJson = new LeerJson();
+        leerJson.recuperarJson();
     }
 }
