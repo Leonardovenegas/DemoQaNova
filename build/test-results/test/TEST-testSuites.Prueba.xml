@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-17T20:02:04" hostname="LAPTOP-RDHROQHB" time="14.651">
+<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-18T13:42:06" hostname="LAPTOP-RDHROQHB" time="14.9">
   <properties/>
-  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="14.651"/>
+  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="14.9"/>
   <system-out><![CDATA[Se despliega correctamente el elemento input usuario, identificador: imUname
 Se despliega correctamente el elemento titulo, identificador: imPgTitle
+Archivo 'descarga_imagen.pdf' existe, se procede a borrarlo
+Archivo 'descarga_imagen.pdf' borrado
 Descarga Realizada
 [PdfBciReport] closePDF
 [PdfBciReport] createTitlePage
-File: BWVCFNBZA305SX2 Not found
+File: W1JDDVHG7PMHKQJ Not found
 ]]></system-out>
   <system-err><![CDATA[java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)

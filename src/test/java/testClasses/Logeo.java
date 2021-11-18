@@ -18,7 +18,7 @@ public class Logeo {
     public Logeo(){
     }
 
-    public void CasoLogin1(String usuario, String clave) throws ParseException, IOException {
+    public void CasoLogin1(String usuario, String clave) throws IOException {
         login = new Login();
         cargaInformacion = new CargaInformacion();
         descargarArchivos = new DescargarArchivos();
@@ -28,6 +28,6 @@ public class Logeo {
         login.clickBtnIngresar();
         cargaInformacion.recuperarTitulo();
         descargarArchivos.ingresarDescargarArchivos();
-        descargarArchivos.descargarPorLink();
+        descargarArchivos.descargarPorImagen();
     }
 }

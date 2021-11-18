@@ -66,4 +66,8 @@ public class DescargarArchivos {
     public void descargarPorLink() throws IOException {
         Utils.descargarArchivo(linkDescarga);
     }
+
+    public void descargarPorImagen() throws IOException {
+        Utils.descargarArchivo(imagenDescarga);
+    }
 }
