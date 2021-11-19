@@ -27,9 +27,4 @@ public class Logeo {
         descargarArchivos.ingresarDescargarArchivos();
         descargarArchivos.descargarPorImagen();
     }
-
-    public void json() throws IOException {
-        LeerJson leerJson = new LeerJson();
-        leerJson.recuperarJson();
-    }
 }

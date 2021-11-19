@@ -35,10 +35,4 @@ public class Prueba {
         logeo.CasoLogin1(usuario, clave);
         PdfQaNovaReports.closePDF();
     }
-
-    @Test
-    public void pruebaJson() throws IOException {
-        Logeo logeo = new Logeo();
-        logeo.json();
-    }
 }
