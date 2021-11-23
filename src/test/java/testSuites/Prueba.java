@@ -1,10 +1,8 @@
 package testSuites;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import testClasses.BusquedaAnimalesGoogle;
 import testClasses.Logeo;
 import utils.Constants.Navegador;
 import utils.DriverContext;
