@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-23T14:19:21" hostname="LAPTOP-RDHROQHB" time="48.899">
+<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-26T20:03:59" hostname="LAPTOP-RDHROQHB" time="54.131">
   <properties/>
-  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="48.899"/>
+  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="54.131"/>
   <system-out><![CDATA[Se despliega correctamente el elemento input usuario, identificador: imUname
 Se despliega correctamente el elemento titulo, identificador: imPgTitle
 Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
@@ -9,7 +9,7 @@ Existe archivo a cargar
 Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
 [PdfBciReport] closePDF
 [PdfBciReport] createTitlePage
-File: 0WFKOF67TW9VX0G Not found
+File: AEGT88KOFDOXAD3 Not found
 ]]></system-out>
   <system-err><![CDATA[java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
@@ -20,7 +20,7 @@ File: 0WFKOF67TW9VX0G Not found
 	at utils.Reporte.PdfQaNovaReports.setRepositoryEmail(PdfQaNovaReports.java:167)
 	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:256)
 	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:34)
+	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,7 +89,7 @@ java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema
 	at utils.Reporte.PdfQaNovaReports.setRepositoryName(PdfQaNovaReports.java:178)
 	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:257)
 	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:34)
+	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +158,7 @@ java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema
 	at utils.Reporte.PdfQaNovaReports.setRepositoryBranch(PdfQaNovaReports.java:189)
 	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:258)
 	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:34)
+	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

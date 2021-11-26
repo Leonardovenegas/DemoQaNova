@@ -7,6 +7,10 @@ import utils.Reporte.EstadoPrueba;
 import utils.Reporte.PdfQaNovaReports;
 
 import javax.imageio.ImageIO;
+import javax.mail.*;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
@@ -20,6 +24,7 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
+import java.util.Properties;
 
 import static utils.Constants.Constants.AMBIENTE;
 
@@ -93,6 +98,30 @@ public class Utils {
             PdfQaNovaReports.addReport("Descarga Archivo "+nombreArchivo, "Se realiza correctamente la descarga del archivo '"+ nombreArchivo +"', el cual se ubica en la ruta: \n"+ ruta, EstadoPrueba.PASSED, false);
         } catch (Exception e){
             PdfQaNovaReports.addReport("Descarga Archivo "+nombreArchivo, "NO se realiza la descarga del archivo '"+ nombreArchivo +"'", EstadoPrueba.FAILED, true);
+        }
+    }
+
+    public static void enviarCorreo(String destinatario){
+        Properties properties = System.getProperties();
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.user", ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo"));
+        properties.put("mail.smtp.clave", ReadProperties.readFromConfig("Propiedades.properties").get("claveCorreo"));
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.port", "587");
+        Session session = Session.getDefaultInstance(properties);
+        MimeMessage message = new MimeMessage(session);
+        try {
+            message.setFrom(new InternetAddress((String) ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo")));
+            message.addRecipients(Message.RecipientType.TO, destinatario);
+            message.setSubject("Resultado Prueba " + PdfQaNovaReports.getTestName());
+            message.setText("La prueba "+ PdfQaNovaReports.getTestName() + " ha quedado en estado "+PdfQaNovaReports.getFinalStatusTest());
+            Transport transport = session.getTransport("smtp");
+            transport.connect("smtp.gmail.com", ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo").toString(), ReadProperties.readFromConfig("Propiedades.properties").get("claveCorreo").toString());
+            transport.sendMessage(message, message.getAllRecipients());
+            transport.close();
+        } catch (MessagingException e) {
+            e.printStackTrace();
         }
     }
 }

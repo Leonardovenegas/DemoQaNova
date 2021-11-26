@@ -8,6 +8,7 @@ import utils.Constants.Navegador;
 import utils.DriverContext;
 import utils.ReadProperties;
 import utils.Reporte.PdfQaNovaReports;
+import utils.Utils;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -32,5 +33,6 @@ public class Prueba {
         String clave = ReadProperties.readFromConfig("Propiedades.properties").getProperty("clave");
         logeo.CasoLogin1(usuario, clave);
         PdfQaNovaReports.closePDF();
+        Utils.enviarCorreo("lvenegas@qanova.cl");
     }
 }
