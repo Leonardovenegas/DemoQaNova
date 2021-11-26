@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import utils.Reporte.EstadoPrueba;
 import utils.Reporte.PdfQaNovaReports;
 
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
 import javax.imageio.ImageIO;
 import javax.mail.*;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+import javax.mail.internet.*;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
@@ -111,11 +111,19 @@ public class Utils {
         properties.put("mail.smtp.port", "587");
         Session session = Session.getDefaultInstance(properties);
         MimeMessage message = new MimeMessage(session);
+        BodyPart texto = new MimeBodyPart();
+        BodyPart adjunto = new MimeBodyPart();
         try {
+            texto.setText("La prueba '"+ PdfQaNovaReports.getTestName() + "' ha quedado en estado "+PdfQaNovaReports.getFinalStatusTest());
+            adjunto.setDataHandler(new DataHandler(new FileDataSource("tmp/" + PdfQaNovaReports.getFullTestName())));
+            adjunto.setFileName(PdfQaNovaReports.getFullTestName());
             message.setFrom(new InternetAddress((String) ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo")));
             message.addRecipients(Message.RecipientType.TO, destinatario);
             message.setSubject("Resultado Prueba " + PdfQaNovaReports.getTestName());
-            message.setText("La prueba '"+ PdfQaNovaReports.getTestName() + "' ha quedado en estado "+PdfQaNovaReports.getFinalStatusTest());
+            MimeMultipart multipart = new MimeMultipart();
+            multipart.addBodyPart(texto);
+            multipart.addBodyPart(adjunto);
+            message.setContent(multipart);
             Transport transport = session.getTransport("smtp");
             transport.connect("smtp.gmail.com", ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo").toString(), ReadProperties.readFromConfig("Propiedades.properties").get("claveCorreo").toString());
             transport.sendMessage(message, message.getAllRecipients());

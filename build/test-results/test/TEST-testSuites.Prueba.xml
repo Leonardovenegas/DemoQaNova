@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-26T20:03:59" hostname="LAPTOP-RDHROQHB" time="54.131">
+<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-26T20:43:04" hostname="LAPTOP-RDHROQHB" time="53.54">
   <properties/>
-  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="54.131"/>
+  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="53.54"/>
   <system-out><![CDATA[Se despliega correctamente el elemento input usuario, identificador: imUname
 Se despliega correctamente el elemento titulo, identificador: imPgTitle
 Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
@@ -9,7 +9,7 @@ Existe archivo a cargar
 Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
 [PdfBciReport] closePDF
 [PdfBciReport] createTitlePage
-File: AEGT88KOFDOXAD3 Not found
+File: 891YGP4W12SCQL9 Not found
 ]]></system-out>
   <system-err><![CDATA[java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
