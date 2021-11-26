@@ -115,7 +115,7 @@ public class Utils {
             message.setFrom(new InternetAddress((String) ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo")));
             message.addRecipients(Message.RecipientType.TO, destinatario);
             message.setSubject("Resultado Prueba " + PdfQaNovaReports.getTestName());
-            message.setText("La prueba "+ PdfQaNovaReports.getTestName() + " ha quedado en estado "+PdfQaNovaReports.getFinalStatusTest());
+            message.setText("La prueba '"+ PdfQaNovaReports.getTestName() + "' ha quedado en estado "+PdfQaNovaReports.getFinalStatusTest());
             Transport transport = session.getTransport("smtp");
             transport.connect("smtp.gmail.com", ReadProperties.readFromConfig("Propiedades.properties").get("usuarioCorreo").toString(), ReadProperties.readFromConfig("Propiedades.properties").get("claveCorreo").toString());
             transport.sendMessage(message, message.getAllRecipients());
