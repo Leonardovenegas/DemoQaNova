@@ -3,6 +3,7 @@ package testClasses;
 import page.*;
 import utils.Reporte.EstadoPrueba;
 import utils.Reporte.PdfQaNovaReports;
+import utils.Utils;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -27,12 +28,8 @@ public class Logeo {
         login.ingresarClave(clave);
         login.clickBtnIngresar();
         cargaInformacion.recuperarTitulo();
-        cargarArchivos.ingresarCargarArchivos();
-        cargarArchivos.validarDespliegue();
-        cargarArchivos.validarTextoTitulo();
-        cargarArchivos.cargarArchivo();
-        cargarArchivos.clickBtnEnviar();
+        matrizInformacion.abrirMatrizInformacion();
         matrizInformacion.validarDespliegue();
-        PdfQaNovaReports.addReport("Archivo de carga", "Archivo cargado exitosamente", EstadoPrueba.PASSED, false);
+        Utils.getConnection();
     }
 }

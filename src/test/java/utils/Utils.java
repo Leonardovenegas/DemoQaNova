@@ -23,6 +23,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Properties;
 
@@ -131,5 +133,25 @@ public class Utils {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
+    }
+
+    public static Connection getConnection(){
+        String ipBd = ReadProperties.readFromConfig("Propiedades.properties").get("ipBaseDeDatos").toString();
+        String bd = ReadProperties.readFromConfig("Propiedades.properties").get("baseDeDatos").toString();
+        String url = "jdbc:mysql://" + ipBd + ":3306/"+bd;
+        String usuario = ReadProperties.readFromConfig("Propiedades.properties").get("usuarioBaseDeDatos").toString();
+        String clave = ReadProperties.readFromConfig("Propiedades.properties").get("claveBaseDeDatos").toString();
+        Connection con = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(url, usuario, clave);
+            System.out.println("Conexion a base de datos " + bd + " exitosa");
+            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', ha sido exitosa", EstadoPrueba.PASSED, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Conexion a base de datos " + bd + " fallida");
+            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', no se pudo realizar", EstadoPrueba.FAILED, true);
+        }
+        return con;
     }
 }

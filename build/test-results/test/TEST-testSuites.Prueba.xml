@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-26T20:43:04" hostname="LAPTOP-RDHROQHB" time="53.54">
+<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-30T19:58:51" hostname="LAPTOP-RDHROQHB" time="10.391">
   <properties/>
-  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="53.54"/>
+  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="10.391"/>
   <system-out><![CDATA[Se despliega correctamente el elemento input usuario, identificador: imUname
 Se despliega correctamente el elemento titulo, identificador: imPgTitle
 Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
-Existe archivo a cargar
-Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
+Conexion a base de datos qanova_demo exitosa
 [PdfBciReport] closePDF
 [PdfBciReport] createTitlePage
-File: 891YGP4W12SCQL9 Not found
+File: 4M9R0LHHYQU8WNC Not found
 ]]></system-out>
   <system-err><![CDATA[java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MatrizInformacion {
 
-    @FindBy(xpath = "//span[@class='imMnMnTextLabel' and text()='Matriz de información']")
+    @FindBy(xpath = "//span[@class='imMnMnTextLabel' and text()='Matriz de informaci\u00f3n']")
     private WebElement btnMatrizInformacion;
 
     @FindBy(id = "imPgTitle")
