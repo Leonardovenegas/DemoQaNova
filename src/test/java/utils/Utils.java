@@ -135,6 +135,7 @@ public class Utils {
         }
     }
 
+
     public static Connection getConnection(){
         String ipBd = ReadProperties.readFromConfig("Propiedades.properties").get("ipBaseDeDatos").toString();
         String bd = ReadProperties.readFromConfig("Propiedades.properties").get("baseDeDatos").toString();
@@ -147,7 +148,7 @@ public class Utils {
             con = DriverManager.getConnection(url, usuario, clave);
             System.out.println("Conexion a base de datos " + bd + " exitosa");
             PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', ha sido exitosa", EstadoPrueba.PASSED, false);
-        } catch (Exception e) {
+        } catch (Exception e){
             e.printStackTrace();
             System.out.println("Conexion a base de datos " + bd + " fallida");
             PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', no se pudo realizar", EstadoPrueba.FAILED, true);
