@@ -1,7 +1,6 @@
 package utils;
 
 import com.itextpdf.awt.geom.misc.RenderingHints;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.Reporte.EstadoPrueba;
 import utils.Reporte.PdfQaNovaReports;
@@ -25,7 +24,11 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
 import static utils.Constants.Constants.AMBIENTE;
@@ -136,23 +139,40 @@ public class Utils {
     }
 
 
-    public static Connection getConnection(){
-        String ipBd = ReadProperties.readFromConfig("Propiedades.properties").get("ipBaseDeDatos").toString();
-        String bd = ReadProperties.readFromConfig("Propiedades.properties").get("baseDeDatos").toString();
-        String url = "jdbc:mysql://" + ipBd + ":3306/"+bd;
-        String usuario = ReadProperties.readFromConfig("Propiedades.properties").get("usuarioBaseDeDatos").toString();
-        String clave = ReadProperties.readFromConfig("Propiedades.properties").get("claveBaseDeDatos").toString();
+    public static List<String> consultaBaseDeDatos(String ip, String baseDeDatos, String usuario, String clave, String consulta){
+        String url = "jdbc:mysql://" + ip + ":3306/"+baseDeDatos;
         Connection con = null;
+        List<String> registros = new ArrayList<>();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url, usuario, clave);
-            System.out.println("Conexion a base de datos " + bd + " exitosa");
-            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', ha sido exitosa", EstadoPrueba.PASSED, false);
+            System.out.println("Conexion a base de datos " + baseDeDatos + " exitosa");
+            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + baseDeDatos + "', ha sido exitosa", EstadoPrueba.PASSED, false);
+            try {
+                Statement statement = con.createStatement();
+                ResultSet rs = statement.executeQuery(consulta);
+                System.out.println("Consulta realizada a la base de datos " + baseDeDatos + ", query: " + consulta);
+                String resultado = "";
+                while (rs.next()){
+                    for (int x = 1; x <= rs.getMetaData().getColumnCount(); x++) {
+                        resultado = resultado + rs.getString(x) +";";
+                    }
+                    resultado = resultado.substring(0, resultado.length()-1);
+                    registros.add(resultado);
+                    resultado = "";
+                }
+                con.close();
+                PdfQaNovaReports.addReport("Consulta a base de datos", "La query '" + consulta +"' se ha ejecutado correctamente, recuperando los siguientes datos:\n" + registros.toString(), EstadoPrueba.PASSED, false);
+            } catch (Exception e){
+                e.printStackTrace();
+                con.close();
+                PdfQaNovaReports.addReport("Consulta a base de datos", "La query '" + consulta +"' no se ha podido ejecutar", EstadoPrueba.FAILED, true);
+            }
         } catch (Exception e){
             e.printStackTrace();
-            System.out.println("Conexion a base de datos " + bd + " fallida");
-            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + bd + "', no se pudo realizar", EstadoPrueba.FAILED, true);
+            System.out.println("Conexion a base de datos " + baseDeDatos + " fallida");
+            PdfQaNovaReports.addReport("Conexion a base de datos", "La conexion a la base de datos '" + baseDeDatos + "', no se pudo realizar", EstadoPrueba.FAILED, true);
         }
-        return con;
+        return registros;
     }
 }
