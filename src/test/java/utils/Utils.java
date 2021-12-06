@@ -155,7 +155,7 @@ public class Utils {
                 String resultado = "";
                 while (rs.next()){
                     for (int x = 1; x <= rs.getMetaData().getColumnCount(); x++) {
-                        resultado = resultado + rs.getString(x) +";";
+                        resultado = resultado + rs.getString(x).trim() +";";
                     }
                     resultado = resultado.substring(0, resultado.length()-1);
                     registros.add(resultado);

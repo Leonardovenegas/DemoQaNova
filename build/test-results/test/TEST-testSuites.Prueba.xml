@@ -1,219 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testSuites.Prueba" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-02T12:21:28" hostname="LAPTOP-RDHROQHB" time="7.003">
+<testsuite name="testSuites.Prueba" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-12-03T14:04:06" hostname="LAPTOP-RDHROQHB" time="165.294">
   <properties/>
-  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="7.003"/>
-  <system-out><![CDATA[Conexion a base de datos qanova_demo exitosa
-Consulta realizada a la base de datos qanova_demo, query: select * from form where id = 1;
-[PdfBciReport] closePDF
-[PdfBciReport] createTitlePage
-File: GMCACIM5JIDWYU0 Not found
+  <testcase name="pruebaLogin" classname="testSuites.Prueba" time="165.294">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[Se despliega correctamente el elemento input usuario, identificador: imUname
+Se despliega correctamente el elemento titulo, identificador: imPgTitle
+Se despliega correctamente el elemento Titulo pagina, identificador: imPgTitle
+Se despliega correctamente el elemento Vista Tabla, identificador: 
+Se recupera la fila nro 1, con los siguientes datos: 
+382;Prueba_MP_2;mp2@gmail.com;Campo Area 2;12/11/2018;valor 2;seleccion 2;cr 2
+Se recupera la fila nro 2, con los siguientes datos: 
+383;Prueba_MP_3;mp3@gmail.com;Campo Area 3;13/11/2018;valor 3;selecci;cr 3
+Se recupera la fila nro 3, con los siguientes datos: 
+469;prueba;email@gmail.com;prueba campo área de texto;09/03/2019;valor 1;selección 1;cr 1
+Se recupera la fila nro 4, con los siguientes datos: 
+4077;Texto Prueba;mailprueba1@gmail.com;asdasd;11/11/1987;valor 2;selección 3;cr 3
+Se recupera la fila nro 5, con los siguientes datos: 
+4078;campo texto 111;mailprueba2@gmail.com;asdasdasd;11/10/1988;valor 2;selección 2;cr 2
+Se recupera la fila nro 6, con los siguientes datos: 
+4142;Prueba;;Prueba;26/06/1994;valor 2;selección 1;
+Se recupera la fila nro 7, con los siguientes datos: 
+4143;Prueba;;prueba;26/06/1994;valor 2;selección 1;cr 2
+Se recupera la fila nro 8, con los siguientes datos: 
+4144;Leonardo Venegas;q@q.cl;Esta es una prueba automatizada;30/01/2021;valor 2;selección 3;cr 1
+Se recupera la fila nro 9, con los siguientes datos: 
+4145;Leonardo Venegas;q@q.cl;Esta es una prueba automatizada;30/01/2021;valor 2;selección 3;cr 1
+Se recupera la fila nro 10, con los siguientes datos: 
+4189;Daniel San Martin;dsanmartin@gmail.com;Esta es una prueba automatizada;12/05/2000;valor 2;selección 1, selección 3;cr 2
+Se despliega correctamente el elemento Vista tabla numero 2, identificador: 
+Se recupera la fila nro 1, con los siguientes datos: 
+4191;Felipe Lillo;qanova@prueba.cl;Este es un mensaje de prueba;29/12/2008;valor 1;selección 1;cr 2
+Se recupera la fila nro 2, con los siguientes datos: 
+4192;Felipe Lillo;pruebas@gmail.com;Prueba automatIzada;08/06/1978;valor 3;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 3, con los siguientes datos: 
+4193;Esperanza Reyes;esperanza@gmail.com;Este es un mensaje de prueba automatizada;09/10/1890;valor 2;selección 1, selección 2;
+Se recupera la fila nro 4, con los siguientes datos: 
+4195;Juan Mellado;jmellado@qanova.cl;prueba automtizada;25/11/1989;valor 2;selección 3;cr 2
+Se recupera la fila nro 5, con los siguientes datos: 
+4196;Juan Mellado;juanmellado14@gamil.com;prueba atiomzadas;05/03/1921;valor 2;selección 3;cr 2
+Se recupera la fila nro 6, con los siguientes datos: 
+4197;Juan Hervas;jhervas@testingqanova.cl;prueba automatizada;19/08/1986;valor 2;selección 3;cr 2
+Se recupera la fila nro 7, con los siguientes datos: 
+4198;Juan Hervas;juanhervas@gmail.com;prueba automatizada con selenium+java;09/08/1990;valor 2;selección 2;cr 2
+Se recupera la fila nro 8, con los siguientes datos: 
+4202;soleee;prueba@jj.cl;wdqw;02/03/2021;valor 2;selección 3;cr 3
+Se recupera la fila nro 9, con los siguientes datos: 
+4204;Leo;leo,@gmail.com;prueba correo;26/06/1994;valor 2;selección 3;cr 2
+Se recupera la fila nro 10, con los siguientes datos: 
+4207;Liany;mallea@qanova.com;prueba;20/03/21;valor 3;selección 1, selección 2;cr 2
+Se despliega correctamente el elemento Vista tabla numero 3, identificador: 
+Se recupera la fila nro 1, con los siguientes datos: 
+4224;Elvis;ElvisTek@carnes.cl;esto es una prueba;19/03/2021;valor 3;selección 1, selección 2;cr 1
+Se recupera la fila nro 2, con los siguientes datos: 
+4232;textocampo1;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 3, con los siguientes datos: 
+4233;textocampo1ty2;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 4, con los siguientes datos: 
+4234;textocampo1ty3;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 5, con los siguientes datos: 
+4235;textocampo1ty3;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 6, con los siguientes datos: 
+4236;textocampo1ty4;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 7, con los siguientes datos: 
+4237;textocampo1ty5;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 8, con los siguientes datos: 
+4238;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 9, con los siguientes datos: 
+4239;Elvis;ElvisTek@carnes.cl;esto es una prueba;19/03/2021;valor 3;selección 1, selección 2;cr 1
+Se recupera la fila nro 10, con los siguientes datos: 
+4259;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se despliega correctamente el elemento Vista tabla numero 4, identificador: 
+Se recupera la fila nro 1, con los siguientes datos: 
+4260;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 2, con los siguientes datos: 
+4261;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 3, con los siguientes datos: 
+4262;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 4, con los siguientes datos: 
+4264;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2
+Se recupera la fila nro 5, con los siguientes datos: 
+4279;wena;d@gmail.com;prueba 1 de autoamtizacion con uipath;11/04/2000;valor 3;selección 1, selección 3, selección 2;cr 3
+Se recupera la fila nro 6, con los siguientes datos: 
+4333;Alexander;Prueba@gmail.com;Esto es una prueba;22/10/2015;valor 3;selección 3, selección 2;cr 2
+Se recupera la fila nro 7, con los siguientes datos: 
+4343;Alexander;Prueba@gmail.com;Esto es una prueba;16/05/2023;valor 3;selección 3, selección 2;cr 2
+Conexion a base de datos qanova_demo exitosa
+Consulta realizada a la base de datos qanova_demo, query: select * from form where Campo_Texto like '%prueba%' or Campo_Mail like '%prueba%' or Campo_Area_de_Texto like '%prueba%';
+Datos recuperados desde la base de datos: [382;Prueba_MP_2;mp2@gmail.com;Campo Area 2;12/11/2018;valor 2;seleccion 2;cr 2, 383;Prueba_MP_3;mp3@gmail.com;Campo Area 3;13/11/2018;valor 3;selecci;cr 3, 469;prueba;email@gmail.com;prueba campo área de texto;09/03/2019;valor 1;selección 1;cr 1, 4077;Texto Prueba;mailprueba1@gmail.com;asdasd;11/11/1987;valor 2;selección 3;cr 3, 4078;campo texto 111;mailprueba2@gmail.com;asdasdasd;11/10/1988;valor 2;selección 2;cr 2, 4142;Prueba;;Prueba;26/06/1994;valor 2;selección 1;, 4143;Prueba;;prueba;26/06/1994;valor 2;selección 1;cr 2, 4144;Leonardo Venegas;q@q.cl;Esta es una prueba automatizada;30/01/2021;valor 2;selección 3;cr 1, 4145;Leonardo Venegas;q@q.cl;Esta es una prueba automatizada;30/01/2021;valor 2;selección 3;cr 1, 4189;Daniel San Martin;dsanmartin@gmail.com;Esta es una prueba automatizada;12/05/2000;valor 2;selección 1, selección 3;cr 2, 4191;Felipe Lillo;qanova@prueba.cl;Este es un mensaje de prueba;29/12/2008;valor 1;selección 1;cr 2, 4192;Felipe Lillo;pruebas@gmail.com;Prueba automatIzada;08/06/1978;valor 3;selección 1, selección 3, selección 2;cr 2, 4193;Esperanza Reyes;esperanza@gmail.com;Este es un mensaje de prueba automatizada;09/10/1890;valor 2;selección 1, selección 2;, 4195;Juan Mellado;jmellado@qanova.cl;prueba automtizada;25/11/1989;valor 2;selección 3;cr 2, 4196;Juan Mellado;juanmellado14@gamil.com;prueba atiomzadas;05/03/1921;valor 2;selección 3;cr 2, 4197;Juan Hervas;jhervas@testingqanova.cl;prueba automatizada;19/08/1986;valor 2;selección 3;cr 2, 4198;Juan Hervas;juanhervas@gmail.com;prueba automatizada con selenium+java;09/08/1990;valor 2;selección 2;cr 2, 4202;soleee;prueba@jj.cl;wdqw;02/03/2021;valor 2;selección 3;cr 3, 4204;Leo;leo,@gmail.com;prueba correo;26/06/1994;valor 2;selección 3;cr 2, 4207;Liany;mallea@qanova.com;prueba;20/03/21;valor 3;selección 1, selección 2;cr 2, 4224;Elvis;ElvisTek@carnes.cl;esto es una prueba;19/03/2021;valor 3;selección 1, selección 2;cr 1, 4232;textocampo1;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4233;textocampo1ty2;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4234;textocampo1ty3;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4235;textocampo1ty3;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4236;textocampo1ty4;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4237;textocampo1ty5;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4238;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4239;Elvis;ElvisTek@carnes.cl;esto es una prueba;19/03/2021;valor 3;selección 1, selección 2;cr 1, 4259;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4260;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4261;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4262;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4264;textocampo1ty7;email@deprueba.cl;toodo el texto del campo 3;14/12/2020;;selección 1, selección 3, selección 2;cr 2, 4279;wena;d@gmail.com;prueba 1 de autoamtizacion con uipath;11/04/2000;valor 3;selección 1, selección 3, selección 2;cr 3, 4333;Alexander;Prueba@gmail.com;Esto es una prueba;22/10/2015;valor 3;selección 3, selección 2;cr 2, 4343;Alexander;Prueba@gmail.com;Esto es una prueba;16/05/2023;valor 3;selección 3, selección 2;cr 2]
 ]]></system-out>
-  <system-err><![CDATA[java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
-	at java.lang.Runtime.exec(Runtime.java:621)
-	at java.lang.Runtime.exec(Runtime.java:451)
-	at java.lang.Runtime.exec(Runtime.java:348)
-	at utils.Reporte.PdfQaNovaReports.getRepositoryEmail(PdfQaNovaReports.java:111)
-	at utils.Reporte.PdfQaNovaReports.setRepositoryEmail(PdfQaNovaReports.java:167)
-	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:256)
-	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(ProcessImpl.java:444)
-	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
-	... 61 more
-java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
-	at java.lang.Runtime.exec(Runtime.java:621)
-	at java.lang.Runtime.exec(Runtime.java:451)
-	at java.lang.Runtime.exec(Runtime.java:348)
-	at utils.Reporte.PdfQaNovaReports.getRepositoryName(PdfQaNovaReports.java:97)
-	at utils.Reporte.PdfQaNovaReports.setRepositoryName(PdfQaNovaReports.java:178)
-	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:257)
-	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(ProcessImpl.java:444)
-	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
-	... 61 more
-java.io.IOException: Cannot run program "git": CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
-	at java.lang.Runtime.exec(Runtime.java:621)
-	at java.lang.Runtime.exec(Runtime.java:451)
-	at java.lang.Runtime.exec(Runtime.java:348)
-	at utils.Reporte.PdfQaNovaReports.getBranchName(PdfQaNovaReports.java:84)
-	at utils.Reporte.PdfQaNovaReports.setRepositoryBranch(PdfQaNovaReports.java:189)
-	at utils.Reporte.PdfQaNovaReports.createTitlePage(PdfQaNovaReports.java:258)
-	at utils.Reporte.PdfQaNovaReports.closePDF(PdfQaNovaReports.java:294)
-	at testSuites.Prueba.pruebaLogin(Prueba.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(ProcessImpl.java:444)
-	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
-	... 61 more
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
