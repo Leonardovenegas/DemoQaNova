@@ -3,6 +3,7 @@ package testSuites;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import testClasses.Haulmer;
 import testClasses.Logeo;
 import utils.Constants.Navegador;
 import utils.DriverContext;
@@ -10,6 +11,7 @@ import utils.ReadProperties;
 import utils.Reporte.PdfQaNovaReports;
 import utils.Utils;
 
+import java.beans.Transient;
 import java.io.IOException;
 import java.text.ParseException;
 
@@ -23,7 +25,7 @@ public class Prueba {
 
     @AfterTest
     public void closeDriver(){
-        DriverContext.closeDriver();
+        //DriverContext.closeDriver();
     }
 
     @Test
@@ -34,5 +36,12 @@ public class Prueba {
         logeo.CasoLogin1(usuario, clave);
         PdfQaNovaReports.closePDF();
         //Utils.enviarCorreo("lvenegas@qanova.cl");
+    }
+
+    @Test
+    public void haulmer() throws InterruptedException {
+        Haulmer haulmer = new Haulmer();
+        haulmer.ingresarProductos();
+        PdfQaNovaReports.closePDF();
     }
 }

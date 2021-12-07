@@ -25,6 +25,23 @@ public class Validaciones {
         }
     }
 
+    public static void validarDisponibilidadObjeto(WebElement webElement, String descripcionElemento) {
+        WebDriverWait webDriverWait = new WebDriverWait(DriverContext.getDriver(), Integer.valueOf(ReadProperties.readFromConfig("Propiedades.properties").getProperty("segundosEspera")));
+        String identificador;
+        try {
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
+            identificador = webElement.getAttribute("xpath");
+            if (identificador == null) {
+                identificador = webElement.getAttribute("id");
+            }
+            System.out.println("Se despliega correctamente el elemento " + descripcionElemento + ", identificador: " + identificador);
+            PdfQaNovaReports.addWebReportImage("Validacion elemento " + descripcionElemento, "Se despliega correctamente el elemento " + descripcionElemento + ", identificador: " + identificador, EstadoPrueba.PASSED, false);
+        } catch (Exception e) {
+            System.out.println("No se despliega elemento " + descripcionElemento);
+            PdfQaNovaReports.addWebReportImage("Validacion elemento " + descripcionElemento, "No se despliega elemento " + descripcionElemento, EstadoPrueba.FAILED, true);
+        }
+    }
+
     public static void validarTexto(WebElement webElement, String texto) {
         String textoWeb = webElement.getText();
         if (textoWeb.equals(texto)) {
